@@ -1,0 +1,155 @@
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%) !important;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    position: absolute;
+    top: 0;
+    color: var(--soft-blue);
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%) !important;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0px 30px 30px hsl(217, 54%, 7%);
+    position: relative;
+
+}
+
+.card-img {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img-top {
+    border-radius: 10px !important;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    background: hsla(178, 100%, 50%, 0.5);
+    padding: 41%;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.overlay:hover, .overlay.active {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.card-title {
+    color: var(--white);
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.card-title:hover, .card-title:active {
+    color: var(--cyan);
+    cursor: pointer; 
+}
+
+.card-text {
+    color: var(--soft-blue);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.ethereum-icon {
+    width: 8px;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+}
+
+.ethereum-value {
+    color: var(--cyan);
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 2px;
+}
+
+.date-icon {
+    width: 13px;
+    position: absolute;
+    bottom: 3px;
+    right: 60px;
+}
+
+.date-value {
+    color: var(--soft-blue);
+    font-size: 12px;
+    position: absolute;
+    right: 0px;
+
+}
+
+hr {
+    color: hsl(215, 32%, 27%);
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.author-picture {
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    width: 25px;
+}
+
+.author p {
+    color: var(--soft-blue);
+    position: absolute;
+    top: 2px;
+    left: 40px;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.author a {
+    text-decoration: none;
+    color: var(--white);
+
+}
+
+.author a:hover, .author a:active {
+    color: var(--cyan);
+    cursor: pointer;
+}
